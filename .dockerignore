@@ -1,0 +1,13 @@
+node_modules
+.dist
+build
+.cache
+.vscode
+.git
+.gitignore
+Dockerfile
+*.log
+.env
+.env.*
+**/node_modules
+**/.DS_Store
