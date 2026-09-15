@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Linkedin, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-4 text-center">Contact</h2>
         <p className="text-center text-slate-600 mb-12">
-          N'hésitez pas à me contacter pour discuter de vos projets ou d'opportunités de collaboration.
+          Je suis ouvert aux opportunités d'ingénieur logiciel et de développeur Full Stack à Tunis ou à distance.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -25,6 +25,16 @@ export default function Contact() {
                 <p className="text-slate-900 font-medium">Mohamedamine.gannouni@ensi-uma.tn</p>
               </div>
             </a>
+
+            <div className="flex items-center p-4 bg-gradient-to-br from-slate-50 to-white rounded-lg border border-slate-200">
+              <div className="p-3 bg-gradient-to-br from-slate-600 to-slate-700 rounded-lg mr-4">
+                <MapPin className="text-white" size={24} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-500">Localisation</p>
+                <p className="text-slate-900 font-medium">Tunis, Tunisie</p>
+              </div>
+            </div>
 
             <a
               href="tel:+21623521637"
@@ -67,8 +77,8 @@ export default function Contact() {
               <div className="flex items-start group">
                 <div className="w-3 h-3 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full mt-1 mr-3 group-hover:scale-125 transition-transform"></div>
                 <div>
-                  <p className="font-medium text-slate-900">Actuellement disponible</p>
-                  <p className="text-sm text-slate-600">Pour un stage de fin d'études</p>
+                  <p className="font-medium text-slate-900">À l'écoute d'opportunités</p>
+                  <p className="text-sm text-slate-600">Ingénieur logiciel et développeur Full Stack</p>
                 </div>
               </div>
 
@@ -76,15 +86,15 @@ export default function Contact() {
                 <div className="w-3 h-3 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mt-1 mr-3 group-hover:scale-125 transition-transform"></div>
                 <div>
                   <p className="font-medium text-slate-900">Type de poste recherché</p>
-                  <p className="text-sm text-slate-600">Stage de développement logiciel, DevOps, ou IA</p>
+                  <p className="text-sm text-slate-600">Développement logiciel, Full Stack, DevOps ou IA</p>
                 </div>
               </div>
 
               <div className="flex items-start group">
                 <div className="w-3 h-3 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mt-1 mr-3 group-hover:scale-125 transition-transform"></div>
                 <div>
-                  <p className="font-medium text-slate-900">Durée souhaitée</p>
-                  <p className="text-sm text-slate-600">4-6 mois</p>
+                  <p className="font-medium text-slate-900">Mobilité</p>
+                  <p className="text-sm text-slate-600">Tunis et opportunités à distance</p>
                 </div>
               </div>
             </div>

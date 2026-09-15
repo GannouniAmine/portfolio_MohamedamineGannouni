@@ -3,27 +3,42 @@ import { Briefcase, Calendar } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      company: 'Platform Creative',
-      role: 'Stage Développement Web',
-      period: '06/2025 – 08/2025',
-      location: 'Prochainement',
+      company: 'Telnet Holding',
+      role: 'Stage de fin d’études (PFE) – Ingénieur logiciel',
+      period: 'Février – juillet 2026',
+      location: 'Tunis',
       description: [
-        'Développement de la plateforme GestionAcces (Spring Boot & Angular)',
-        'Mise en place de l\'authentification sécurisée (JWT), gestion des rôles et tableaux de bord',
-        'Participation complète au cycle Agile Scrum : planification, développement, tests et livraisons',
-        'Modélisation UML, conception fonctionnelle et optimisation back-end'
+        'Plateforme web de gestion des compétences : référentiel, matrice d’évaluation, validation historisée, notifications, export Excel et tableaux de bord',
+        'Module d’analyse de projet assistée par IA avec FastAPI et Azure OpenAI : extraction des compétences, analyse des écarts et rapport PDF',
+        'Sécurité JWT par cookies httpOnly, contrôle d’accès par rôle avec Spring Security et audit OWASP ZAP',
+        'Qualité et livraison : 102 classes de tests, couverture portée de 78 % à 89 %, CI GitHub Actions et analyse SonarQube',
+        '34 user stories livrées sur 20 sprints en Agile Scrum',
+        'Technologies : Java, Spring Boot, Vue.js, PostgreSQL, Python, FastAPI, Azure OpenAI, Docker, GitHub Actions, SonarQube'
       ],
-      status: 'upcoming'
+      status: 'completed'
+    },
+    {
+      company: 'Platform Creative',
+      role: 'Stage en développement web',
+      period: 'Juin – août 2025',
+      location: 'Tunis',
+      description: [
+        'Développement d’AccessHR, plateforme de gestion des accès, présences et congés pour trois profils',
+        'Authentification par reconnaissance faciale avec un microservice Python, Flask, OpenCV DNN, YuNet et SFace',
+        'Modules de gestion des projets, tâches, absences, congés, annonces et tableaux de bord par rôle',
+        'Sécurité JWT et Spring Security, activation par courriel, API Swagger et environnement Docker Compose',
+        'Conception UML et travail en Agile Scrum. Technologies : Java, Spring Boot, Angular, MySQL, Python, Flask, OpenCV'
+      ],
+      status: 'completed'
     },
     {
       company: 'Tunisie Telecom',
       role: 'Stage Réseaux & Télécommunications',
       period: '08/2024',
-      location: 'Tunis',
+      location: 'Ben Arous',
       description: [
-        'Supervision et diagnostic des infrastructures réseaux',
-        'Analyse des performances et optimisation des systèmes de télécommunication',
-        'Résolution d\'incidents et collaboration avec les équipes techniques'
+        'Assistance technique sur les infrastructures réseau : diagnostic et résolution d’incidents',
+        'Analyse des performances et optimisation des systèmes de télécommunication'
       ],
       status: 'completed'
     }
@@ -56,12 +71,6 @@ export default function Experience() {
                   <span className="text-sm">{exp.period}</span>
                 </div>
               </div>
-
-              {exp.status === 'upcoming' && (
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-emerald-100 to-teal-100 text-emerald-700 text-xs font-medium rounded-full mb-4 border border-emerald-200">
-                  Stage à venir
-                </div>
-              )}
 
               <ul className="space-y-2">
                 {exp.description.map((item, index) => (

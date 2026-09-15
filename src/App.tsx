@@ -1,4 +1,3 @@
-import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink } from 'lucide-react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -38,8 +37,8 @@ function App() {
           <div className="flex items-center justify-center mb-4">
             <h3 className="text-lg font-semibold">Mohamed Amine Gannouni</h3>
           </div>
-          <p className="text-slate-400 mb-4">Ingénieur Logiciel & DevOps | ENSI</p>
-          <p className="text-slate-500">© 2024 Mohamed Amine Gannouni. Tous droits réservés.</p>
+          <p className="text-slate-400 mb-4">Ingénieur Logiciel | Développeur Full Stack | ENSI</p>
+          <p className="text-slate-500">© 2026 Mohamed Amine Gannouni</p>
         </div>
       </footer>
     </div>

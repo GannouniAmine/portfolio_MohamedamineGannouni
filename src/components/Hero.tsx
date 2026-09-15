@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full border border-cyan-500/30">
             <Sparkles size={16} className="text-cyan-400" />
-            <span className="text-sm text-cyan-300">Bienvenue sur mon portfolio</span>
+            <span className="text-sm text-cyan-300">Disponible pour de nouvelles opportunités</span>
           </div>
 
           <h1 className="text-7xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
@@ -20,12 +20,13 @@ export default function Hero() {
           </h1>
 
           <p className="text-2xl md:text-3xl text-slate-200 mb-6 font-light">
-            Ingénieur Logiciel & DevOps
+            Ingénieur Logiciel <span className="text-cyan-400">|</span> Développeur Full Stack
           </p>
 
           <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionné par le développement logiciel, le cloud, les architectures modernes et l'intelligence artificielle.
-            À la recherche d'opportunités pour appliquer mes compétences dans un environnement innovant.
+            Diplômé de l'ENSI, je conçois des applications web robustes et des solutions logicielles
+            modernes, de l'architecture au déploiement. Je recherche un poste d'ingénieur logiciel
+            ou de développeur Full Stack.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -33,7 +34,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:-translate-y-1 font-semibold"
             >
-              Voir mes projets
+              Découvrir mon parcours
             </a>
             <a
               href="#contact"

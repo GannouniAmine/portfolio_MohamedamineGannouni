@@ -10,10 +10,10 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Objectif</h3>
             <p className="text-gray-600 leading-relaxed">
-              Étudiant en génie logiciel à l'ENSI, je suis passionné par le développement logiciel,
-              le cloud, les architectures modernes et l'intelligence artificielle. Je recherche un stage
-              de fin d'études afin d'appliquer mes compétences dans un environnement professionnel
-              exigeant et innovant.
+              Ingénieur en informatique diplômé de l'École Nationale des Sciences de l'Informatique,
+              spécialisé dans la conception et le développement de solutions logicielles et d'applications
+              web. J'aime transformer des besoins métier en produits fiables, testables et maintenables,
+              en m'appuyant sur les architectures modernes, l'automatisation et l'intelligence artificielle.
             </p>
           </div>
 
@@ -38,14 +38,14 @@ export default function About() {
             <h3 className="text-xl font-semibold text-slate-900 mb-3">Formation</h3>
             <div className="space-y-3 text-gray-600">
               <div>
-                <p className="font-medium text-slate-900">ENSI</p>
-                <p className="text-sm text-slate-600">Cycle Ingénieur en Génie Logiciel</p>
-                <p className="text-sm text-cyan-600">Actuellement</p>
+                  <p className="font-medium text-slate-900">ENSI</p>
+                  <p className="text-sm text-slate-600">Diplôme National d'Ingénieur en Informatique</p>
+                  <p className="text-sm text-cyan-600">2023 – 2026</p>
               </div>
               <div>
                 <p className="font-medium text-slate-900">IPEIEM El Manar</p>
-                <p className="text-sm text-slate-600">Classe Préparatoire</p>
-                <p className="text-sm text-slate-500">2023</p>
+                <p className="text-sm text-slate-600">Cycle préparatoire aux concours des écoles d'ingénieurs</p>
+                <p className="text-sm text-slate-500">2021 – 2023</p>
               </div>
               <div>
                 <p className="font-medium text-slate-900">Baccalauréat</p>
@@ -59,12 +59,12 @@ export default function About() {
             <div className="p-3 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg w-fit mb-4">
               <Award className="text-white" size={28} />
             </div>
-            <h3 className="text-xl font-semibold text-slate-900 mb-3">Certifications</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Domaines d'intérêt</h3>
             <div className="space-y-2 text-slate-600">
-              <p className="text-sm">DevOps & CI/CD</p>
-              <p className="text-sm">Architecture Microservices</p>
-              <p className="text-sm">Cloud Computing</p>
-              <p className="text-sm">Intelligence Artificielle</p>
+              <p className="text-sm">Architecture microservices</p>
+              <p className="text-sm">DevOps et CI/CD</p>
+              <p className="text-sm">Cloud et automatisation</p>
+              <p className="text-sm">Intelligence artificielle</p>
             </div>
           </div>
 
@@ -76,15 +76,15 @@ export default function About() {
             <div className="space-y-3 text-slate-600">
               <div>
                 <p className="font-medium text-slate-900">Arabe</p>
-                <p className="text-sm text-teal-600">Maternelle</p>
+                <p className="text-sm text-teal-600">Langue maternelle</p>
               </div>
               <div>
                 <p className="font-medium text-slate-900">Français</p>
-                <p className="text-sm text-teal-600">B1</p>
+                <p className="text-sm text-teal-600">Courant professionnel</p>
               </div>
               <div>
                 <p className="font-medium text-slate-900">Anglais</p>
-                <p className="text-sm text-teal-600">B1</p>
+                <p className="text-sm text-teal-600">Courant professionnel</p>
               </div>
             </div>
           </div>

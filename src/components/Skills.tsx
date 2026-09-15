@@ -5,37 +5,37 @@ export default function Skills() {
     {
       icon: Server,
       title: 'Back-end',
-      skills: ['Java (Spring Boot)', 'Python', 'Node.js', 'NestJS', 'Express'],
+      skills: ['Java', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'Python', 'Node.js', 'NestJS', 'Express.js', 'FastAPI', 'Flask'],
       gradient: 'from-cyan-500 to-teal-500'
     },
     {
       icon: Code,
       title: 'Front-end',
-      skills: ['Angular', 'React', 'Next.js', 'HTML', 'CSS', 'TypeScript'],
+      skills: ['Angular', 'Vue.js', 'React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML/CSS'],
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
       icon: Cog,
       title: 'DevOps',
-      skills: ['Git', 'GitHub Actions', 'Docker', 'Jenkins', 'Kubernetes', 'Ansible'],
+      skills: ['Git', 'GitHub Actions', 'Docker', 'Jenkins', 'Kubernetes', 'Ansible', 'Maven'],
       gradient: 'from-teal-500 to-emerald-500'
     },
     {
       icon: Cloud,
-      title: 'Cloud / Monitoring',
-      skills: ['Prometheus', 'Grafana', 'SonarQube'],
+      title: 'Cloud & qualité',
+      skills: ['Prometheus', 'Grafana', 'SonarQube', 'OWASP ZAP', 'Postman'],
       gradient: 'from-purple-500 to-pink-500'
     },
     {
       icon: Database,
-      title: 'Bases de données',
-      skills: ['PostgreSQL', 'MySQL', 'SQL'],
+      title: 'Données & IA',
+      skills: ['PostgreSQL', 'MySQL', 'H2', 'Azure OpenAI', 'LangChain', 'RAG', 'OCR', 'OpenCV'],
       gradient: 'from-orange-500 to-red-500'
     },
     {
       icon: Package,
-      title: 'Autres',
-      skills: ['Swagger', 'Postman', 'JWT', 'UML'],
+      title: 'Pratiques',
+      skills: ['JUnit 5', 'Mockito', 'Vitest', 'JaCoCo', 'Swagger/OpenAPI', 'JWT', 'UML', 'API REST'],
       gradient: 'from-indigo-500 to-blue-500'
     }
   ];

@@ -1,49 +1,46 @@
-import { Folder, ExternalLink } from 'lucide-react';
+import { ExternalLink, Folder } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
-      title: 'Pipeline CI/CD Full DevOps',
-      description: 'Conception d\'un pipeline CI/CD complet : Git, GitHub Actions, Maven, JUnit, SonarQube, Docker, Ansible, Kubernetes, Prometheus, Grafana. Automatisation du build, test, déploiement et monitoring.',
-      tags: ['Git', 'GitHub Actions', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana'],
+      title: 'Spendly – Smart Expense Parser',
+      description: 'Application de gestion des dépenses en microservices, avec extraction des reçus par OCR et IA.',
+      tags: ['Spring Boot', 'Thymeleaf', 'OCR.Space', 'OpenAI', 'Docker'],
+      category: 'Full-Stack + IA',
+      color: 'from-purple-50',
+      link: 'https://github.com/MiroJlassi/Spendly'
+    },
+    {
+      title: 'GestionAcces / AccessHR',
+      description: 'Plateforme web de gestion des accès, des présences et des congés, avec authentification faciale et tableaux de bord par rôle.',
+      tags: ['Spring Boot', 'Angular', 'Python', 'OpenCV', 'Docker'],
+      category: 'Full-Stack',
+      color: 'from-cyan-50',
+      link: 'https://github.com/GannouniAmine/GestionAccesProject'
+    },
+    {
+      title: 'Pipeline CI/CD',
+      description: 'Automatisation du build, des tests, du déploiement et de la supervision dans une chaîne DevOps complète.',
+      tags: ['Git', 'GitHub Actions', 'Maven', 'JUnit', 'SonarQube', 'Docker', 'Ansible', 'Kubernetes', 'Grafana'],
       category: 'DevOps',
       color: 'from-emerald-50'
     },
     {
-      title: 'Spendly – Smart Expense Parser',
-      description: 'Architecture microservices Spring Boot avec un moteur OCR + IA (OpenAI) pour extraire automatiquement les données de reçus. Intégration d\'APIs externes, containerisation Docker, orchestration Kubernetes et création de dashboards.',
-      tags: ['Spring Boot', 'OpenAI', 'OCR', 'Docker', 'Kubernetes', 'Microservices'],
-      category: 'Full-Stack + IA',
-      color: 'from-purple-50'
-    },
-    {
       title: 'BookHive',
-      description: 'Application web de gestion de bibliothèque personnelle (Next.js, NestJS, PostgreSQL). Authentification, gestion livres, catégories et recherche.',
-      tags: ['Next.js', 'NestJS', 'PostgreSQL', 'Authentication'],
+      description: 'Application web de gestion d’une bibliothèque personnelle.',
+      tags: ['Next.js', 'NestJS', 'PostgreSQL'],
       category: 'Full-Stack',
-      color: 'from-blue-50'
+      color: 'from-blue-50',
+      link: 'https://github.com/GannouniAmine/bibleotheque_personnel'
     },
     {
       title: 'Market Research RAG Agent',
-      description: 'Outil d\'analyse de marché basé sur un agent RAG (React, Python, LangChain, vector DB) permettant l\'extraction d\'insights à partir de données non structurées.',
-      tags: ['React', 'Python', 'LangChain', 'RAG', 'Vector DB', 'IA'],
+      description: 'Agent d’analyse de marché fondé sur une architecture RAG pour exploiter des données non structurées.',
+      tags: ['Python', 'OpenAI', 'LangChain', 'React', 'RAG'],
       category: 'IA & Data',
-      color: 'from-orange-50'
+      color: 'from-orange-50',
+      link: 'https://github.com/AhmedTrb/RAG-Solution-for-Market-Research'
     },
-    {
-      title: 'E-commerce Fashion',
-      description: 'Application boutique en ligne (PHP, JS, HTML/CSS) avec système de panier, gestion produits et authentification.',
-      tags: ['PHP', 'JavaScript', 'HTML', 'CSS', 'MySQL'],
-      category: 'Web',
-      color: 'from-pink-50'
-    },
-    {
-      title: 'E-BUS Ticketing System',
-      description: 'Application CLI en C pour la gestion et l\'optimisation de réservations de tickets.',
-      tags: ['C', 'CLI', 'Algorithms'],
-      category: 'Systems',
-      color: 'from-cyan-50'
-    }
   ];
 
   return (
@@ -70,6 +67,16 @@ export default function Projects() {
 
               <h3 className="text-xl font-semibold text-slate-900 mb-3">{project.title}</h3>
               <p className="text-slate-600 mb-4 leading-relaxed text-sm">{project.description}</p>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-cyan-700 hover:text-cyan-900 transition-colors mb-4"
+              >
+                Voir le dépôt GitHub
+                <ExternalLink size={16} />
+              </a>
 
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
